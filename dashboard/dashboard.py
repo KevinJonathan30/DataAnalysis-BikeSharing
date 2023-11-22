@@ -17,7 +17,7 @@ def create_daily_rentals_df(df):
     return daily_rentals_df
 
 
-all_df = pd.read_csv("https://github.com/KevinJonathan30/DataAnalysis-BikeSharing/blob/master/dashboard/all_data.csv")
+all_df = pd.read_csv("https://raw.githubusercontent.com/KevinJonathan30/DataAnalysis-BikeSharing/master/dashboard/all_data.csv")
 
 datetime_columns = ["dteday"]
 all_df.sort_values(by="dteday", inplace=True)
